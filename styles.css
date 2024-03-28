@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C5E4E7;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Space Mono", monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#bill-amount,
+#number-of-input {
+    width: 379px;
+    background: #F3F9FA;
+    box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474B;
+    padding: 6px 24px 6px 0;
+}
+
+label,
+.select-bill-tip-wrappper p {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E7A7D;
+    margin-bottom: 6px;
+}
+
+.tip-bill-form-fill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.logo-img-container {
+    margin-bottom: 16px;
+}
+
+.tip-calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.tip-bill-form-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 25px;
+}
+
+.tip-total-amount-container {
+    background-color: #00474B;
+    color: white;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.select-tip-options-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.select-tip-value:hover {
+    background: #9FE8DF;
+    border-radius: 5px;
+    color: #00474B;
+}
+
+.select-tip-value,
+.select-tip-input-value {
+    width: 117px;
+    height: 48px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    background: #00474B;
+    border-radius: 5px;
+}
+
+.select-tip-input-value {
+    background: #F3F9FA;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #547878;
+    outline: 0;
+}
+
+.tip-total-amount-container {
+    width: 413px;
+    height: 417px;
+    background: #00474B;
+    border-radius: 15px;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-number-wrapper {
+    position: relative;
+}
+
+.input-number-wrapper img {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.tip-amount-value-wrapper,
+.bill-amount-value-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-amount-value-wrapper p span,
+.bill-amount-value-wrapper p span {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.tip-amount-value-wrapper p span:nth-child(2),
+.bill-amount-value-wrapper p span:nth-child(2) {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7F9D9F;
+}
+
+.tip-amount-value-wrapper h2,
+.bill-amount-value-wrapper h2 {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26C2AE;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.reset-button button {
+    width: 100%;
+    height: 42px;
+    background: #26C2AE;
+    border-radius: 5px;
+    border: 0;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474B;
+    text-transform: uppercase;
+}
