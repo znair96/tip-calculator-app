@@ -23,7 +23,10 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
-
+.select-tip-options-wrapper .tip-enabled{
+    background-color: #26C2AE;
+    color: #00474B;
+}
 #bill-amount,
 #number-of-input {
     width: 379px;
